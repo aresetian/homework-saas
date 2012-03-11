@@ -1,0 +1,170 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-10 21:27:45 -0800
+Served asset /rails.png - 304 Not Modified (48ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-10 21:28:00 -0800
+  Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 13ms
+
+ActiveRecord::StatementInvalid (Could not find table 'movies'):
+  app/controllers/movies_controller.rb:10:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-11 09:24:02 -0700
+Served asset /rails.png - 304 Not Modified (50ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 09:24:26 -0700
+  Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 66ms
+
+ActiveRecord::StatementInvalid (Could not find table 'movies'):
+  app/controllers/movies_controller.rb:10:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.6ms)
+
+
+Started GET "/moviesActiveRecord::StatementInvalid%20in%20MoviesController" for 127.0.0.1 at 2012-03-11 09:25:05 -0700
+
+ActionController::RoutingError (No route matches [GET] "/moviesActiveRecord::StatementInvalid%20in%20MoviesController"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (201.5ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (98.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (68.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20111119180638)
+  [1m[35m (6.7ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111119180638')[0m
+Migrating to AddMoreMovies (20120130161449)
+  [1m[35mSQL (137.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sun, 11 Mar 2012 17:08:34 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120130161449')
+  [1m[36m (0.8ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("movies")[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-11 10:09:38 -0700
+Served asset /rails.png - 304 Not Modified (6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 10:09:45 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (419.9ms)
+Compiled application.css  (1ms)  (pid 8111)
+Compiled application.js  (176ms)  (pid 8111)
+Compiled jquery.js  (184ms)  (pid 8111)
+Compiled jquery_ujs.js  (87ms)  (pid 8111)
+Completed 200 OK in 3738ms (Views: 3722.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 10:09:53 -0700
+Served asset /application.css - 304 Not Modified (225ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 10:09:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (99ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 10:09:54 -0700
+Served asset /jquery.js - 304 Not Modified (114ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 10:09:54 -0700
+Served asset /application.js - 304 Not Modified (371ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-03-11 10:13:25 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (109.5ms)
+Completed 200 OK in 281ms (Views: 267.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:28 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:28 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 10:13:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2012-03-11 10:13:43 -0700
+  Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xdwljEfBAZD7PnJaEQS/AV22+9LH2o+KhpVo3jCHcaE=", "movie"=>{"title"=>"Hugo", "rating"=>"G", "release_date(1i)"=>"2012", "release_date(2i)"=>"3", "release_date(3i)"=>"11"}, "commit"=>"Save Changes"}
+  [1m[35mSQL (342.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 17:13:44 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Sun, 11 Mar 2012 00:00:00 UTC +00:00], ["title", "Hugo"], ["updated_at", Sun, 11 Mar 2012 17:13:44 UTC +00:00]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 830ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 10:13:45 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (6.3ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (237.5ms)
+Completed 200 OK in 386ms (Views: 349.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:47 -0700
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 10:13:47 -0700
+Served asset /application.css - 304 Not Modified (63ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 10:13:47 -0700
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 12:55:27 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (131.0ms)
+Completed 200 OK in 794ms (Views: 770.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 12:55:40 -0700
+Served asset /application.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 12:55:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (136ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 12:55:42 -0700
+Served asset /application.css - 304 Not Modified (106ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 12:55:42 -0700
+Served asset /jquery.js - 304 Not Modified (48ms)
