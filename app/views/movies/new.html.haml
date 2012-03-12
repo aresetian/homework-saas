@@ -1,6 +1,6 @@
 %h1 Create New Movie
 
-= form_tag movies_path do
+= form_tag movies_path(session[:params]) do
 
   = label :movie, :title, 'Title'
   = text_field :movie, 'title'

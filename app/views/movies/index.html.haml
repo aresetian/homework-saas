@@ -1,7 +1,7 @@
 -#  This file is app/views/movies/index.html.haml
 %h1 All Movies
 
-= form_tag movies_path, :method => :get do
+= form_tag movies_path, :method => :get, :id => 'ratings_form' do
   Include:
   - @all_ratings.each do |rating|
     = rating
@@ -9,7 +9,7 @@
   = hidden_field_tag('title_hilite', params[:title_hilite])
   = hidden_field_tag('release_hilite', params[:release_hilite])
   = hidden_field_tag('sort_id', params[:sort_id])
-  = submit_tag 'Refresh'
+  = submit_tag 'Refresh', :id => 'ratings_submit'
   
 %table#movies
   %thead
