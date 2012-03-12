@@ -7,7 +7,25 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
+    #sort_by = (params[:order] == 'starts_at' ? 'starts_at desc' : 'name')
+   # sort_by = 'release_date desc'
+   #@events = Event.find(:all, :order => sort_by)
+   # respond_to do |format|
+       # format.html # index.html.erb
+       # format.xml { render :xml => @events }
+    # end
+   # @movies = Movie.all
+  # @movies = Movie.find(:all, :order => sort_by)
+  @all_ratings = Movie.get_ratings_list
+    session[:params] = params
+    sort_id = params[:sort_id]
+    ratings = params[:ratings]
+      
+    if ratings == nil
+      @movies = Movie.find(:all, :order => sort_id)
+    else
+      @movies = Movie.find(:all, :order => sort_id, :conditions => {:rating => ratings.keys}) 
+    end
   end
 
   def new
@@ -21,6 +39,7 @@ class MoviesController < ApplicationController
   end
 
   def edit
+    
     @movie = Movie.find params[:id]
   end
 

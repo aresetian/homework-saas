@@ -258,3 +258,750 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 14:08:53 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:46:49 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (95.4ms)
+Completed 500 Internal Server Error in 204ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Title):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to Movie Title, movie_path('1')
+    8:       %th Rating
+    9:       %th link_to Release Date
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__76782868_90826010'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.3ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:47:18 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (62.8ms)
+Completed 500 Internal Server Error in 267ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Title):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to Movie Title, movie_path(1)
+    8:       %th Rating
+    9:       %th link_to Release Date
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__76782868_86950560'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (64.5ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:47:40 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (31.7ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (324.2ms)
+Completed 200 OK in 1261ms (Views: 1208.2ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 14:47:43 -0700
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 14:47:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 14:47:43 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 14:47:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:50:03 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (13.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 93ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (13.1ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:51:04 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (25.7ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 87ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:51:12 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (59.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 152ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (14.9ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:51:16 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (17.4ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 123ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (14.4ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 14:52:04 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 63ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:28:11 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 132ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (10.8ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:28:54 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 97ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (6.7ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:28:58 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 67ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (15.3ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:30:10 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (13.9ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 103ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:30:34 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 159ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:30:37 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 119ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:31:09 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 107ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:31:12 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (63.9ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 139ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder, :coffee, :haml], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/saasbook/homework-saas/app/views"
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (27.6ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:33:52 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 1092ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (22.7ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:36:37 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 74ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:36:41 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.9ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 500 Internal Server Error in 179ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.7ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 15:36:43 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 93ms
+
+ActionView::MissingTemplate (Missing template movies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-11 16:05:26 -0700
+Served asset /rails.png - 304 Not Modified (24ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 16:05:40 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (377.6ms)
+Completed 200 OK in 1841ms (Views: 1806.1ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:05:46 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:05:47 -0700
+Served asset /jquery.js - 304 Not Modified (119ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:05:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:05:47 -0700
+Served asset /application.js - 304 Not Modified (107ms)
+
+
+Started GET "/movies/10" for 127.0.0.1 at 2012-03-11 16:05:57 -0700
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "10"]]
+Rendered movies/show.html.haml within layouts/application (98.4ms)
+Completed 200 OK in 199ms (Views: 157.6ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:06:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 16:06:09 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (15.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (161.7ms)
+Completed 200 OK in 316ms (Views: 282.4ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:06:11 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4" for 127.0.0.1 at 2012-03-11 16:06:17 -0700
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered movies/show.html.haml within layouts/application (127.4ms)
+Completed 200 OK in 226ms (Views: 189.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:06:19 -0700
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4/edit" for 127.0.0.1 at 2012-03-11 16:06:33 -0700
+  Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered movies/edit.html.haml within layouts/application (156.7ms)
+Completed 200 OK in 333ms (Views: 303.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:06:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:35 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:06:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 16:38:52 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (375.8ms)
+Completed 200 OK in 1702ms (Views: 1660.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:39:11 -0700
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:39:11 -0700
+Served asset /jquery.js - 304 Not Modified (86ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:39:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:39:12 -0700
+Served asset /application.js - 304 Not Modified (77ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 16:43:35 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title desc
+Rendered movies/index.html.haml within layouts/application (193.6ms)
+Completed 200 OK in 323ms (Views: 283.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:43:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:43:38 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:43:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:43:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 16:45:10 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title asc[0m
+Rendered movies/index.html.haml within layouts/application (195.2ms)
+Completed 200 OK in 278ms (Views: 256.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:45:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:45:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:45:12 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:45:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 16:46:07 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (28.9ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date asc
+Rendered movies/index.html.haml within layouts/application (578.1ms)
+Completed 200 OK in 848ms (Views: 798.4ms | ActiveRecord: 39.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:46:09 -0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:10 -0700
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-03-11 16:46:39 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date desc[0m
+Rendered movies/index.html.haml within layouts/application (223.3ms)
+Completed 200 OK in 401ms (Views: 384.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 16:46:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:41 -0700
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 16:46:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 17:27:53 -0700
+  Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `get_ratings_list' for #<Class:0xa7315e0>):
+  app/controllers/movies_controller.rb:19:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (34.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (128.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-03-11 17:29:26 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (1132.0ms)
+Compiled application.css  (1ms)  (pid 13323)
+Completed 200 OK in 1669ms (Views: 1647.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:29 -0700
+Served asset /jquery.js - 304 Not Modified (173ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:29:29 -0700
+Served asset /application.css - 200 OK (248ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (128ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:30 -0700
+Served asset /application.js - 304 Not Modified (92ms)
+
+
+Started GET "/movies?sort_id=title&title_hilite=hilite" for 127.0.0.1 at 2012-03-11 17:29:36 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_id"=>"title", "title_hilite"=>"hilite"}
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+Rendered movies/index.html.haml within layouts/application (192.0ms)
+Completed 200 OK in 387ms (Views: 293.5ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:29:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?release_hilite=hilite&sort_id=release_date" for 127.0.0.1 at 2012-03-11 17:29:45 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"release_hilite"=>"hilite", "sort_id"=>"release_date"}
+  [1m[36mMovie Load (4.8ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (181.0ms)
+Completed 200 OK in 903ms (Views: 828.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:29:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:48 -0700
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:48 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?release_hilite=hilite&sort_id=release_date" for 127.0.0.1 at 2012-03-11 17:29:53 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"release_hilite"=>"hilite", "sort_id"=>"release_date"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (229.5ms)
+Completed 200 OK in 472ms (Views: 356.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:55 -0700
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:29:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:29:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies?release_hilite=hilite&sort_id=release_date" for 127.0.0.1 at 2012-03-11 17:30:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"release_hilite"=>"hilite", "sort_id"=>"release_date"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Rendered movies/index.html.haml within layouts/application (290.6ms)
+Completed 200 OK in 499ms (Views: 441.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:30:04 -0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:04 -0700
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/movies?sort_id=title&title_hilite=hilite" for 127.0.0.1 at 2012-03-11 17:30:09 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_id"=>"title", "title_hilite"=>"hilite"}
+  [1m[35mMovie Load (2.7ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+Rendered movies/index.html.haml within layouts/application (191.1ms)
+Completed 200 OK in 370ms (Views: 356.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:12 -0700
+Served asset /jquery.js - 304 Not Modified (94ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:30:12 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:12 -0700
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/movies?sort_id=title&title_hilite=hilite" for 127.0.0.1 at 2012-03-11 17:30:17 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_id"=>"title", "title_hilite"=>"hilite"}
+  [1m[36mMovie Load (8.3ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (314.4ms)
+Completed 200 OK in 656ms (Views: 626.1ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:30:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (75ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:19 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:19 -0700
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/movies?release_hilite=hilite&sort_id=release_date" for 127.0.0.1 at 2012-03-11 17:30:26 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"release_hilite"=>"hilite", "sort_id"=>"release_date"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (737.6ms)
+Completed 200 OK in 1047ms (Views: 860.3ms | ActiveRecord: 73.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:29 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:29 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:30:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (98ms)
+
+
+Started GET "/movies?sort_id=title&title_hilite=hilite" for 127.0.0.1 at 2012-03-11 17:30:34 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_id"=>"title", "title_hilite"=>"hilite"}
+  [1m[36mMovie Load (15.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (153.3ms)
+Completed 200 OK in 303ms (Views: 248.4ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-03-11 17:30:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-03-11 17:30:37 -0700
+Served asset /application.js - 304 Not Modified (1ms)
