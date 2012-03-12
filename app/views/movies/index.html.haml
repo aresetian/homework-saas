@@ -1,6 +1,16 @@
 -#  This file is app/views/movies/index.html.haml
 %h1 All Movies
 
+= form_tag movies_path, :method => :get do
+  Include:
+  - @all_ratings.each do |rating|
+    = rating
+    = check_box_tag("ratings[#{rating}]", 1, !params[:ratings].nil? && params[:ratings].has_key?(rating))
+  = hidden_field_tag('title_hilite', params[:title_hilite])
+  = hidden_field_tag('release_hilite', params[:release_hilite])
+  = hidden_field_tag('sort_id', params[:sort_id])
+  = submit_tag 'Refresh'
+  
 %table#movies
   %thead
     %tr
